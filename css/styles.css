@@ -50,7 +50,6 @@ body {
 	margin: auto;
 	background-color: black; 
 	color: #ff9600;
-	border: 1px solid white;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -207,17 +206,36 @@ ul > a {
 .format-text {
 	margin: 2%;
 	text-align: center;
+	color: black;
 }
 
-.format-text {
-	margin: 2%;
+.format-post {
+	padding: 5px 0;
+	background-color: #ff9600;
 }
 
 .link-texto-post {
 	text-decoration: underline;
-	color: #d4a669; 
+	color: #5d3909; 
+}
+
+.link-texto-post-home {
+	text-decoration: underline;
+	color: #f1c488; 
 }
 
 .author {
 	font-size: 1rem;
+}
+
+.color {
+	color: #ff9600;
+}
+
+.text-post {
+	padding-left: 10px;
+}
+
+.format-hr {
+	border-color: black;
 }
