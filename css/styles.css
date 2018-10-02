@@ -203,3 +203,21 @@ ul > a {
 .flex-wrap {
 	flex-wrap: wrap;
 }
+
+.format-text {
+	margin: 2%;
+	text-align: center;
+}
+
+.format-text {
+	margin: 2%;
+}
+
+.link-texto-post {
+	text-decoration: underline;
+	color: #d4a669; 
+}
+
+.author {
+	font-size: 1rem;
+}
