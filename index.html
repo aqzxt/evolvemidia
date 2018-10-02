@@ -11,13 +11,33 @@
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-126740663-1');
+	</script>
 </head>
 <body>
-	<header class="cabeçalho container-padrao">
+	<header class="cabecalho container-padrao">
 		<div class="col-6">
 			<img src="image/logo.png" alt="Logo # evolve midia" class="img-logo">
 		</div>
-		<nav class="col-6 menu">
+		<input id="menu-hamburguer-check" type="checkbox">
+		<label for="menu-hamburguer-check">
+			<div class="menu-hamburguer">
+					<span class="hamburguer"></span>
+			</div>
+		</label>
+		<ul class="ul-hamburguer">
+			<li class="li-hamburguer"><a href="index.html">home</a></li>
+			<li class="li-hamburguer"><a href="blog.html">blog</a></li>
+			<li class="li-hamburguer"><a href="sobre.html">sobre</a></li>
+		</ul>
+		<nav class="col-6 menu img-desktop">
 			<ul class="menu">
 				<li class="estilo-lista"><a href="index.html">home</a></li>
 				<li class="estilo-lista"><a href="blog.html">blog</a></li>
@@ -58,6 +78,20 @@
 				outdoor. Não só você, mas também o seu potencial cliente, então esta é uma
 				mídia que você deve conhecer melhor!
 			</p>
+		</div>
+	</article>
+	<article class="postagem container-padrao">
+		<div class="col-5 space col-mobile">
+
+				<form id="captura" action="FIREBASE_CODIGO">
+					<h4>Cadastre-se e receba novidades:</h4>
+					<p><input type="email" name="email" placeholder="Endereço de email" required></p>
+					<p><input type="text" name="nome" placeholder="Nome completo" required></p>
+					<p><input class="c1" type="checkbox" name="empresa">Empresário?</p>
+
+					
+					<button onclick="enviarForm">CADASTRE-SE</button>
+				</form>
 		</div>
 	</article>
 	<footer>
