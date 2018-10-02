@@ -64,7 +64,8 @@ a {
 }
 
 .container-padrao {
-	width: 800px;
+	max-width: 800px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -94,6 +95,10 @@ a {
 	width: 100%;
 }
 
+.img-footer {
+	max-width: 200px;
+}
+
 .postagem {
 	display: flex;
 	padding-bottom: 10px;
@@ -115,7 +120,6 @@ a {
 footer {
 	background-color: #ff9600;
 	color: black;
-	height: 180px;
 	display: flex;
 	align-items: center;
 }
@@ -141,12 +145,22 @@ ul > a {
 	display: flex;
 }
 
+.footer-center {
+	width: 100%;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	height: 100%;
+}
+
 .text-footer {
 	align-items: center;
 	display: flex;
-	border-right: 1px solid black;
-	border-left: 1px solid black;
-	margin: 0 10px;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+
+.box-footer {
+	padding: 20px 0;
 }
 
 .img-footer {
@@ -157,6 +171,7 @@ ul > a {
 .rede-social-evolve-footer {
 	width: 100%;
 	padding-top: 20px; 
+	align-items: center;
 }
 
 .img-rede-social {
@@ -181,3 +196,6 @@ ul > a {
 	display: block;
 }
 
+.flex-wrap {
+	flex-wrap: wrap;
+}
