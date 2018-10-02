@@ -59,6 +59,10 @@ a {
 	color: #ff9600;
 }
 
+input {
+	display: none;
+}
+
 .estilo-lista {
 	padding: 0 10px;
 }
@@ -69,7 +73,7 @@ a {
 	margin: auto;
 }
 
-.cabeçalho {
+.cabecalho {
 	color: #ff9600;
 	height: 80px;
 	display: flex;
