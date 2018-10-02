@@ -1,0 +1,29 @@
+@media (min-width: 500px) {
+	.img-mobile {
+		display: none;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.img-desktop {
+		display: none;
+	}
+
+	.col-mobile {
+		width: 100%;
+	}
+
+	.postagem {
+		width: 100%;
+	}
+
+	.container-mapa-site {
+		text-align: center;
+	}
+
+	.rede-social-evolve-footer {
+		justify-content: center;
+	}
+}
+
