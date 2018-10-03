@@ -11,42 +11,14 @@
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
-	<script src="js/form.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-126740663-1');
-	</script>
-	<!-- Facebook Pixel Code -->
-	<script>
-	  !function(f,b,e,v,n,t,s)
-	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	  n.queue=[];t=b.createElement(e);t.async=!0;
-	  t.src=v;s=b.getElementsByTagName(e)[0];
-	  s.parentNode.insertBefore(t,s)}(window, document,'script',
-	  'https://connect.facebook.net/en_US/fbevents.js');
-	  fbq('init', '643270842725818');
-	  fbq('track', 'PageView');
-	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
-	/></noscript>
 </head>
 <body>
 	<header class="cabecalho container-padrao">
 		<div class="col-6">
 			<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
 		</div>
-		<input id="menu-hamburguer-check" type="checkbox">
+		<input id="menu-hamburguer-check" class="input-none" type="checkbox">
 		<label for="menu-hamburguer-check">
 			<div class="menu-hamburguer">
 					<span class="hamburguer"></span>
@@ -92,20 +64,31 @@
 			</p>
 		</div>
 	</article>
-	<article class="postagem container-padrao">
-		<div class="col-5 space col-mobile">
-				<form id="captura">
-						<h4>Cadastre-se e receba novidades:</h4>
-						<div class="alerta" style="display: none">Seus dados foram enviados com sucesso!</div>
-	
-						<input class="form-control" id="email" type="email" name="email" placeholder="Endereço de email" required>
-						<input class="form-control" id="nome" type="text" name="nome" placeholder="Nome completo" required>
-						<p><input class="form-control" id="empresa" type="checkbox" name="empresa">Empresário?</p>
-	
-						<button id="enviar" type="button" onclick="enviarForm()">Cadastre-se</button>
-					</form>
+	<section class="estyle-form-section">
+		<div class="estyle-form-span">
+		    <span>
+		    	Cadastre-se para <b >aprender</b> mais e receber conteúdo prático sobre <b>Midia of-line!</b>
+		    </span>
+			</br>
+		    <span> 
+		    	Fique tranquilo, nós também odiamos SPAM! Só enviaremos conteúdos <b>INTERESSANTES!!</b>
+		    </span>
 		</div>
-	</article>
+		<div class="style-form">
+			<form >
+				<input type="email" name="email" placeholder="Endereço de email" required class="form-input">
+				<input type="text" name="nome" placeholder="Nome completo" required class="form-input">
+				<select name="tipo" placeholder="empresa" class="form-input input-option">
+			        <option value="B2B" >Sim</option>
+			        <option value="B2C">Não</option>
+      			</select>
+				<div class="box-button">
+					<button type="submit" onclick="enviarForm()" class="button">CADASTRAR</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	
 	<footer>
 		<div class="container-padrao display-flex flex-wrap box-footer">
 			<div class="col-3 container-mapa-site col-mobile">
@@ -133,5 +116,34 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-126740663-1');
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '643270842725818');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
+	/></noscript>
 </body>
 </html>
