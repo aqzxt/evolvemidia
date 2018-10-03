@@ -144,6 +144,16 @@
 	.text-post {
 		padding-left: 0;
 	}
+	
+	.sobre {
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+
+	.sobre {
+	line-height: 0;
+	}
 
 }
 
