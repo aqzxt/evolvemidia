@@ -58,59 +58,9 @@ a {
 	color: #ff9600;
 }
 
-/* input {
+.input-none {
 	display: none;
-} */
-
-.form-control {
-	margin: .4rem;
-	/* padding: .4rem .7rem .4rem .7rem; */
-	padding: 9px 8px 9px 40px;
-	font-size: 90%;
-	border-radius: 6px;
-	text-align: left;
-	font-size: 100%;
 }
-
-::-webkit-input-placeholder {
-	font-weight: 800; 
-	font-size: 90%;
-}
-:-moz-placeholder {
-	font-weight: 800; 
-	font-size: 90%;
-}
-::-moz-placeholder {
-	font-weight: 800; 
-	font-size: 90%;
-}
-:-ms-input-placeholder {
-	font-weight: 800; 
-	font-size: 90%;
-}
-
-form {
-	text-align: center;
-	/* margin-left: auto;
-	margin-right: auto; */
-	width: 80%;
-	/* position: relative; */
-}
-
-button {
-	background-color: rgb(133, 226, 133);
-	padding: 10px 40px 10px;
-	color: black;
-	font-size: 20px;
-	font-weight: 700;
-	border-radius: 6px;
-}
-
-article {
-	padding: .4rem;
-}
-
-
 
 .estilo-lista {
 	padding: 0 10px;
@@ -289,3 +239,68 @@ ul > a {
 .format-hr {
 	border-color: black;
 }
+
+.estyle-form-section {
+	display: block;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	color: black;
+	background-color: orange;
+	border-radius: 5px;
+}
+
+.estyle-form-span {
+	max-width: 400px;
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.form-input {
+	width: 100%;
+    border-radius: 8px;
+    height: 30px;
+    margin: 5px auto;
+    border-color: #fb7800;
+}
+
+.input-option {
+	width: 50%;
+}
+
+.style-form {
+	width: 80%;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.button {
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 8px;
+	background-color: black;
+    border-color: black;
+    color: orange;
+    font-size: 13px;
+    font-weight: 800; 
+    cursor: pointer;
+}
+
+.box-button {
+	margin: auto;
+	padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+

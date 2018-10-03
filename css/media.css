@@ -94,7 +94,7 @@
 		list-style: none;
 		opacity: 0;
 		transition: .25s .40s ease-in-out;
-
+		display: none;
 	}
 
 	.ul-hamburguer:hover {
