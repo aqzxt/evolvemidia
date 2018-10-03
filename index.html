@@ -13,6 +13,10 @@
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
+	<script src="js/form.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -33,16 +37,19 @@
 	  fbq('init', '643270842725818');
 	  fbq('track', 'PageView');
 	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
-	/></noscript>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"/>
+	</noscript>
+	
+
+	
 </head>
 <body>
 	<header class="cabecalho container-padrao">
 		<div class="col-6">
-			<img src="image/logo.png" alt="Logo # evolve midia" class="img-logo">
+			<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
 		</div>
-		<input id="menu-hamburguer-check" type="checkbox">
+		<!-- <input id="menu-hamburguer-check" type="checkbox"> -->
 		<label for="menu-hamburguer-check">
 			<div class="menu-hamburguer">
 					<span class="hamburguer"></span>
@@ -61,60 +68,61 @@
 			</ul>
 		</nav>
 	</header>
-	<image><img src="image/img-principal.png" alt="imagem principal de outdoors" class="img img-principal"></image>
+	<image><img src="img/img-principal.png" alt="imagem principal de outdoors" class="img img-principal"></image>
 	<article class="postagem container-padrao">
 		<div class="col-7 col-mobile format-text2">
 			<h1 class="format-text color">Investir em mídia on ou offline? Descubra as vantagens de cada uma.</h1>
-			<a href="https://www.evolvemidia.com.br/materia-Qual-a-melhor-mídia-para-investir-on-offline.html">
-				<img src="image/img-post.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile">
+			<a href="materia-Qual-a-melhor-mídia-para-investir-on-offline.html">
+				<img src="img/img-post.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile">
 			</a>
 			<p>
-				Boa parte das empresas têm investido seus esforços em mídias online, mas a mídia offline também é uma opção viável que pode aumentar as vendas da sua empresa. Veja as vantagens de cada uma delas... <a href="https://www.evolvemidia.com.br/materia-Qual-a-melhor-mídia-para-investir-on-offline.html" class="link-texto-post-home">Saiba mais</a>
+				Boa parte das empresas têm investido seus esforços em mídias online, mas a mídia offline também é uma opção viável que pode aumentar as vendas da sua empresa. Veja as vantagens de cada uma delas... <a href="materia-Qual-a-melhor-mídia-para-investir-on-offline.html" class="link-texto-post-home">Saiba mais</a>
 			</p>
 		</div>
 		<div class="col-5 space img-desktop">
-			<a href="https://www.evolvemidia.com.br/materia-Qual-a-melhor-mídia-para-investir-on-offline.html"><img src="image/img-post.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
+			<a href="materia-Qual-a-melhor-mídia-para-investir-on-offline.html"><img src="img/img-post.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
 		</div>
 	</article>
 	<article class="postagem container-padrao">
 		<div class="col-5 img-desktop">
-			<a href="https://www.evolvemidia.com.br/materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html"><img src="image/campanha-netflix.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
+			<a href="materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html"><img src="img/campanha-netflix.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
 		</div>
 		<div class="col-7 space col-mobile">
 			<h1 class="format-text color">Case Netflix: por que a marca investe em publicidade offline?</h1>
-			<a href="https://www.evolvemidia.com.br/materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html"><img src="image/campanha-netflix.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile"></a>
+			<a href="materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html"><img src="img/campanha-netflix.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile"></a>
 			<p class="text-post">
-				A mídia out-of-home, aquela que traz impacto nas ruas, no metrô e até no elevador, vem ganhando uma posição estratégica no mercado de publicidade. Entenda os diferenciais que levaram marcas como Netflix a te impactar mesmo quando você não está conectado no computador ou no seu celular:... <a href="https://www.evolvemidia.com.br/materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html" class="link-texto-post-home">Saiba mais</a>
+				A mídia out-of-home, aquela que traz impacto nas ruas, no metrô e até no elevador, vem ganhando uma posição estratégica no mercado de publicidade. Entenda os diferenciais que levaram marcas como Netflix a te impactar mesmo quando você não está conectado no computador ou no seu celular:... <a href="materia-Case-Netflix-por-que-a-marca-investe-em-publicidade-offline.html" class="link-texto-post-home">Saiba mais</a>
 			</p>
 		</div>
 	</article>
 	<article class="postagem container-padrao">
 		<div class="col-7 col-mobile format-text2">
 			<h1 class="format-text color">Quer anunciar em outdoor? Saiba como aqui!</h1>
-			<a href="https://www.evolvemidia.com.br/materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html">
-				<img src="image/outdoor-branco.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile">
+			<a href="materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html">
+				<img src="img/outdoor-branco.png" alt="varios tipos de propagando de uma rua famosa" class="img img-mobile">
 			</a>
 			<p>
 				Seja numa viagem a trabalho, num passeio a lazer, às vezes até mesmo a
 				caminho do trabalho, você vê aquelas placas grandes, algumas vezes
 				iluminadas e elas te chamam atenção, correto?
-				Mesmo sem saber, você estpa sendo impactado... <a href="https://www.evolvemidia.com.br/materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html" class="link-texto-post-home">Saiba mais</a>
+				Mesmo sem saber, você estpa sendo impactado... <a href="materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html" class="link-texto-post-home">Saiba mais</a>
 			</p>
 		</div>
 		<div class="col-5 space img-desktop">
-			<a href="https://www.evolvemidia.com.br/materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html"><img src="image/outdoor-branco.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
+			<a href="materia-Quer-anunciar-em-outdoor-Saiba-como-aqui.html"><img src="img/outdoor-branco.png" alt="varios tipos de propagando de uma rua famosa" class="img"></a>
 		</div>
 	</article>
 	<article class="postagem container-padrao">
 		<div class="col-5 space col-mobile">
-
-				<form id="captura" action="FIREBASE_CODIGO">
+				<form id="captura">
 					<h4>Cadastre-se e receba novidades:</h4>
-					<p><input type="email" name="email" placeholder="Endereço de email" required></p>
-					<p><input type="text" name="nome" placeholder="Nome completo" required></p>
-					<p><input class="c1" type="checkbox" name="empresa">Empresário?</p>
-					<form>esreva aqui</form>
-					<button onclick="enviarForm">CADASTRE-SE</button>
+					<div class="alerta" style="display: none">Seus dados foram enviados com sucesso!</div>
+
+					<input class="form-control" id="email" type="email" name="email" placeholder="Endereço de email" required>
+					<input class="form-control" id="nome" type="text" name="nome" placeholder="Nome completo" required>
+					<p><input class="form-control" id="empresa" type="checkbox" name="empresa">Empresário?</p>
+
+					<button id="enviar" type="button" onclick="enviarForm()">Cadastre-se</button>
 				</form>
 		</div>
 	</article>
@@ -135,12 +143,12 @@
 			</div>
 			<div class="col-3 col-mobile">
 				<div class="rede-social-evolve-footer display-flex">
-					<img src="image/logo_orange.png" alt="logo # evolve midia" class="img img-footer">
+					<img src="img/logo_orange.png" alt="logo # evolve midia" class="img img-footer">
 				</div>
 				<div class="rede-social-evolve-footer display-flex">
-					<a href="https://www.instagram.com/evolvemidia/" target="blank"><img src="image/img-instagram.png" alt="link do instagram" class="img-rede-social"></a>
-					<a href="https://www.facebook.com/midiaevolve" target="blank"><img src="image/img-facebook.png" alt="link do facebook" class="img-rede-social"></a>
-					<a href="https://www.linkedin.com/in/evolve-m%C3%ADdia-041057172/" target="blank"><img src="image/img-linkedin.png" alt="link do linkedin" class="img-rede-social"></a>
+					<a href="https://www.instagram.com/evolvemidia/" target="blank"><img src="img/img-instagram.png" alt="link do instagram" class="img-rede-social"></a>
+					<a href="https://www.facebook.com/midiaevolve" target="blank"><img src="img/img-facebook.png" alt="link do facebook" class="img-rede-social"></a>
+					<a href="https://www.linkedin.com/in/evolve-m%C3%ADdia-041057172/" target="blank"><img src="img/img-linkedin.png" alt="link do linkedin" class="img-rede-social"></a>
 				</div>
 			</div>
 		</div>

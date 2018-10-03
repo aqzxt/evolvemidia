@@ -58,9 +58,59 @@ a {
 	color: #ff9600;
 }
 
-input {
+/* input {
 	display: none;
+} */
+
+.form-control {
+	margin: .4rem;
+	/* padding: .4rem .7rem .4rem .7rem; */
+	padding: 9px 8px 9px 40px;
+	font-size: 90%;
+	border-radius: 6px;
+	text-align: left;
+	font-size: 100%;
 }
+
+::-webkit-input-placeholder {
+	font-weight: 800; 
+	font-size: 90%;
+}
+:-moz-placeholder {
+	font-weight: 800; 
+	font-size: 90%;
+}
+::-moz-placeholder {
+	font-weight: 800; 
+	font-size: 90%;
+}
+:-ms-input-placeholder {
+	font-weight: 800; 
+	font-size: 90%;
+}
+
+form {
+	text-align: center;
+	/* margin-left: auto;
+	margin-right: auto; */
+	width: 80%;
+	/* position: relative; */
+}
+
+button {
+	background-color: rgb(133, 226, 133);
+	padding: 10px 40px 10px;
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 6px;
+}
+
+article {
+	padding: .4rem;
+}
+
+
 
 .estilo-lista {
 	padding: 0 10px;

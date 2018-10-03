@@ -13,6 +13,10 @@
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
+	<script src="js/form.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -40,7 +44,7 @@
 <body>
 	<header class="cabecalho container-padrao">
 		<div class="col-6">
-			<img src="image/logo.png" alt="Logo # evolve midia" class="img-logo">
+			<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
 		</div>
 		<input id="menu-hamburguer-check" type="checkbox">
 		<label for="menu-hamburguer-check">
@@ -129,16 +133,16 @@
 	</article>
 	<article class="postagem container-padrao">
 		<div class="col-5 space col-mobile">
-
-				<form id="captura" action="FIREBASE_CODIGO">
-					<h4>Cadastre-se e receba novidades:</h4>
-					<p><input type="email" name="email" placeholder="Endereço de email" required></p>
-					<p><input type="text" name="nome" placeholder="Nome completo" required></p>
-					<p><input class="c1" type="checkbox" name="empresa">Empresário?</p>
-
-					
-					<button onclick="enviarForm">CADASTRE-SE</button>
-				</form>
+				<form id="captura">
+						<h4>Cadastre-se e receba novidades:</h4>
+						<div class="alerta" style="display: none">Seus dados foram enviados com sucesso!</div>
+	
+						<input class="form-control" id="email" type="email" name="email" placeholder="Endereço de email" required>
+						<input class="form-control" id="nome" type="text" name="nome" placeholder="Nome completo" required>
+						<p><input class="form-control" id="empresa" type="checkbox" name="empresa">Empresário?</p>
+	
+						<button id="enviar" type="button" onclick="enviarForm()">Cadastre-se</button>
+					</form>
 		</div>
 	</article>
 	<footer>
@@ -158,12 +162,12 @@
 			</div>
 			<div class="col-3 col-mobile">
 				<div class="rede-social-evolve-footer display-flex">
-					<img src="image/logo_orange.png" alt="logo # evolve midia" class="img img-footer">
+					<img src="img/logo_orange.png" alt="logo # evolve midia" class="img img-footer">
 				</div>
 				<div class="rede-social-evolve-footer display-flex">
-					<a href="https://www.instagram.com/evolvemidia/" target="blank"><img src="image/img-instagram.png" alt="link do instagram" class="img-rede-social"></a>
-					<a href="https://www.facebook.com/midiaevolve" target="blank"><img src="image/img-facebook.png" alt="link do facebook" class="img-rede-social"></a>
-					<a href="https://www.linkedin.com/in/evolve-m%C3%ADdia-041057172/" target="blank"><img src="image/img-linkedin.png" alt="link do linkedin" class="img-rede-social"></a>
+					<a href="https://www.instagram.com/evolvemidia/" target="blank"><img src="img/img-instagram.png" alt="link do instagram" class="img-rede-social"></a>
+					<a href="https://www.facebook.com/midiaevolve" target="blank"><img src="img/img-facebook.png" alt="link do facebook" class="img-rede-social"></a>
+					<a href="https://www.linkedin.com/in/evolve-m%C3%ADdia-041057172/" target="blank"><img src="img/img-linkedin.png" alt="link do linkedin" class="img-rede-social"></a>
 				</div>
 			</div>
 		</div>
