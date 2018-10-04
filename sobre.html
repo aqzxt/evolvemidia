@@ -83,18 +83,15 @@
 			    </span>
 			</div>
 			<div class="style-form">
-				<form >
-					<input type="email" name="email" placeholder="Endereço de email" required class="form-input">
-					<input type="text" name="nome" placeholder="Nome completo" required class="form-input">
-					<span class="span-form2">Tem empresa?</span>
-					<select name="tipo" placeholder="empresa" class="form-input input-option">
-				        <option value="B2B" >Sim</option>
-				        <option value="B2C">Não</option>
-	      			</select>
-					<div class="box-button">
-						<button type="submit" onclick="enviarForm()" class="button">CADASTRAR</button>
-					</div>
-				</form>
+					<form id="captura">
+
+							<input id="email" type="email" name="email" placeholder="Endereço de email" required class="form-input">
+							<input id="nome" type="text" name="nome" placeholder="Nome completo" required class="form-input f2">
+							<div class="box-button">
+								<button id="botao" type="button" class="button">CADASTRAR</button>
+							</div>
+							<div class="alerta">Seus dados foram enviados com sucesso!</div>
+						</form>
 			</div>
 		</div>
 	</section>
