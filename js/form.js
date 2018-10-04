@@ -25,10 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		var email = document.getElementById('email').value;
 		var nome = document.getElementById('nome').value;
-
-		// var dominios = []
-
 		var tipo = "B2C";
+
+		var dominios = [
+			"@yahoo.com", "@yahoo.com.br", "@ymail.com", "@rocketmail.com", "@gmail.com", "@bol.com.br", "@hotmail.com", "@outlook.com", "@msn.com", "@hotmail.com.br", "@live.com", "@ig.com.br", "@globomail.com", "@oi.com.br", "@pop.com.br", "@inteligweb.com.br", "@r7.com", "@folha.com.br", "@zipmail.com.br", "@zoho.com"
+		]
+		// for (i = 0; i < dominios.length; i++) {
+		// 	if (dominios[i] in email) {
+		// 		tipo = 
+		// 	}
+		// }
+
+		
 		
 		var d = new Date();
 		var dia = ("0" + (d.getDate() +1)).slice(-2);
@@ -49,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			if (nome.length > 2 && email.length > 4) {
 				// Enviar para o banco de dados
-				// var envio = ref.set({
-				// 	email: email,
-				// 	nome: nome,
-				// 	ip: ip,
-				// 	tipo: tipo,
-				// 	data_hora: data_hora
-				// });
+				var envio = ref.set({
+					email: email,
+					nome: nome,
+					ip: ip,
+					tipo: tipo,
+					data_hora: data_hora
+				});
 				document.querySelector(".box-button").style.display = "none";
 				document.querySelector(".alerta").style.display = "block";
 				document.querySelector(".form-input").value = "";

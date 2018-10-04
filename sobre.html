@@ -3,10 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale1">
-	<meta name="description" content="descrição de no maximo 90 caracteres">
-	<meta name="keywords" content="palavras-chaves, curtas, maximo 150 caracteres">
-	<meta name="author" content="nome do autor">
-	<title>Evolve Mídia</title>
+	<title>Evolve Mídia - Sobre nosso blog</title>
+	<meta name="description" content="Conheça a Evolve Mídia. Entenda nossas
+	soluções e o mercado out-of-home!"/>
+	<meta name="robots" content="index,follow"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Evolve Mídia - Sobre nosso blog"/>
+	<meta property="og:description" content="Conheça a Evolve Mídia. Entenda
+	nossas soluções e o mercado out-of-home!"/>
+	<meta property="og:image"
+	content="https://media.licdn.com/dms/image/C4D03AQF_xDbS9TV4GA/profile-dis
+	playphoto-shrink_100_100/0?e=1544054400&v=beta&t=n2kq2hpyVgWGgIgkE5_r
+	4-MRMosp8BOydQUs5RZoS2s"/>
+	<meta property="og:image:height" content="200"/>
+	<meta property="og:image:width" content="200"/>
+	<meta property="og:site_name" content="evolvemidia.com.br"/>
+	<meta property="og:url"
+	content="https://www.evolvemidia.com.br/sobre.html"/>
+	<meta property="og:locale" content="pt_BR"/>
+	<link rel="canonical" href="https://www.evolvemidia.com.br/sobre.html"/>
+	<meta name="author" content="Evolve Mídia">
+	<meta name="google-site-verification" content="EkToVj87pE96DV-IzB_s3Uy80Cv6rwex4DI5NypmVVo" />
+	<title>Sobre - Evolve Mídia</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
@@ -22,29 +40,34 @@
 	</script>
 </head>
 <body>
-	<header class="cabecalho container-padrao">
-		<div class="col-6">
-			<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
-		</div>
-		<input id="menu-hamburguer-check" class="input-none" type="checkbox">
-		<label for="menu-hamburguer-check">
-			<div class="menu-hamburguer">
-					<span class="hamburguer"></span>
-			</div>
-		</label>
-		<ul class="ul-hamburguer">
-			<li class="li-hamburguer"><a href="index.html">home</a></li>
-			<li class="li-hamburguer"><a href="blog.html">blog</a></li>
-			<li class="li-hamburguer"><a href="sobre.html">sobre</a></li>
-		</ul>
-		<nav class="col-6 menu img-desktop">
-			<ul class="menu">
-				<li class="estilo-lista"><a href="index.html">home</a></li>
-				<li class="estilo-lista"><a href="blog.html">blog</a></li>
-				<li class="estilo-lista"><a href="sobre.html">sobre</a></li>
-			</ul>
-		</nav>
-	</header>
+		<header class="cabecalho container-padrao">
+				<!-- Logo -->
+				<div class="col-6">
+					<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
+				</div>
+				<!-- Menu Mobile -->
+				<input id="menu-hamburguer-check" class="input-none" type="checkbox">
+				<label for="menu-hamburguer-check">
+					<div class="menu-hamburguer">
+						<span class="hamburguer"></span>
+					</div>
+				</label>
+				<ul class="ul-hamburguer">
+					<li class="li-hamburguer"><a href="index.html">home</a></li>
+					<li class="li-hamburguer"><a href="blog.html">blog</a></li>
+					<li class="li-hamburguer"><a href="sobre.html">sobre</a></li>
+					<li class="li-hamburguer"><a href="e-book.html"></a>E-book Gratuito</li>
+				</ul>
+				<!-- Menu Desktop -->
+				<nav class="col-6 menu img-desktop">
+					<ul class="menu">
+						<li class="estilo-lista"><a href="index.html">home</a></li>
+						<li class="estilo-lista"><a href="blog.html">blog</a></li>
+						<li class="estilo-lista"><a href="sobre.html">sobre</a></li>
+						<li class="estilo-lista"><a href="e-book.html">E-book Gratuito</a></li>
+					</ul>
+				</nav>
+			</header>
 	<article class="postagem container-padrao">
 		<div class="col-7 img-desktop">
 			<img src="img/imagem-principal-sobre.png" alt="imagem princial com diversas propagandas na rua de Shanghai" class="img">
@@ -74,12 +97,12 @@
 		<div class="estyle-form-section">
 			<div class="estyle-form-span">
 			    <span class="span-form1">
-			    	Cadastre-se para <b >aprender</b> mais e receber conteúdo prático sobre <b>Midia of-line!</b>
+			    	Cadastre-se para <strong>aprender</strong> mais e receber conteúdo prático sobre <strong>Mídia offline!</strong>
 			    </span>
 			</br>
 			</br>
 			    <span class="span-form2"> 
-			    	Fique tranquilo, nós também odiamos SPAM! Só enviaremos conteúdos <b>INTERESSANTES!!</b>
+			    	Fique tranquilo, não praticamos SPAM. Pode confiar! <b>;)</b>
 			    </span>
 			</div>
 			<div class="style-form">
@@ -124,7 +147,12 @@
 		</div>
 	</footer>
 
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/form.js"></script>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -152,8 +180,5 @@
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
 	/></noscript>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-	<script src="script/contato.js"></script>
 </body>
 </html>

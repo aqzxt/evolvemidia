@@ -62,7 +62,7 @@
 	font-weight: 800;
  }
 
-.col-1 {
+ .col-1 {
     width: 8.33%;
 }
 
@@ -148,7 +148,7 @@ a {
 }
 
 .img-principal {
-	padding-bottom: 20px;
+	padding: 10px 0 10px 0;
 }
 
 
@@ -268,8 +268,7 @@ ul > a {
 }
 
 .format-text {
-	margin: 2%;
-	text-align: center;
+	text-align: left;
 	color: black;
 }
 
@@ -368,15 +367,9 @@ ul > a {
 
 .span-form2 {
 	font-size:15px; 
-	opacity: 
+	/* opacity:  */
 }
 
-
-
-
-
-
-
-
-
-
+.display-block {
+	display: block;
+}
