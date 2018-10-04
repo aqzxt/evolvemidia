@@ -1,3 +1,67 @@
+.alerta {
+	display: none;
+	background-color: rgb(151, 219, 48);
+	color: black;
+	border-radius: 4px;
+	padding: 6px;
+	font-weight: 600;
+	margin: 3px 6px;
+	border: 2px solid #4caf50;
+	line-height: 30px;
+	border-radius: 9px;
+}
+
+#tipo, .emp {
+	display:none;
+}
+
+.link {
+	color: blue;
+}
+
+#ob {
+	padding: 60px;
+	font-size: 70px;
+	font-weight: 900;
+	border: #fb7800;
+	background-color: #ff9600;
+	color: black;
+	text-align: center;
+}
+
+#obpara {
+	text-align: center;
+	font-size: 20px;
+	line-height: 3rem;
+}
+
+/* h2, h3, h4 {
+	padding-top: 12px;
+	margin-top: 14px;
+	margin-bottom: -6px;
+	line-height: 30px;
+} */
+
+::-webkit-input-placeholder {
+	font-size: .8rem;
+	font-weight: 800;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+	font-size: .8rem;
+	font-weight: 800;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+	font-size: .8rem;
+	font-weight: 800;
+ }
+ 
+ :-ms-input-placeholder {  
+	font-size: .8rem;
+	font-weight: 800;
+ }
+
 .col-1 {
     width: 8.33%;
 }

@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale1">
-	<meta name="description" content="descrição de no maximo 90 caracteres">
+	<meta name="description" content="Matérias recentes">
 	<meta name="keywords" content="palavras-chaves, curtas, maximo 150 caracteres">
-	<meta name="author" content="nome do autor">
-	<title>Evolve Mídia</title>
+	<meta name="author" content="Evolve Mídia">
+	<meta name="google-site-verification" content="EkToVj87pE96DV-IzB_s3Uy80Cv6rwex4DI5NypmVVo" />
+	<title>Matérias recentes - Evolve Mídia</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
@@ -49,16 +50,16 @@
 		<div class="col-7 col-mobile format-text2">
 			<h1 class="format-text color">Matérias Recentes</h1>
 			<p>
-				<a href="materia-qual-a-melhor-midia-para-investir-on-offline.html" class="link-texto-post-home">Investir em mídia on ou offline? Descubra as vantagens de cada uma.</a>
+				<a href="qual-a-melhor-midia-para-investir-on-offline.html" class="link-texto-post-home">Investir em mídia on ou offline? Descubra as vantagens de cada uma.</a>
 			</p>
 			<p>
-				<a href="materia-case-netflix-por-que-a-marca-investe-em-publicidade-offline.html" class="link-texto-post-home">Case Netflix: por que a marca investe em publicidade offline?</a>
+				<a href="case-netflix-por-que-a-marca-investe-em-publicidade-offline.html" class="link-texto-post-home">Case Netflix: por que a marca investe em publicidade offline?</a>
 			</p>
 			<p>
-				<a href="materia-quer-anunciar-em-outdoor-saiba-como-aqui.html" class="link-texto-post-home">Quer anunciar em outdoor? Saiba como aqui!</a>
+				<a href="quer-anunciar-em-outdoor-saiba-como-aqui.html" class="link-texto-post-home">Quer anunciar em outdoor? Saiba como aqui!</a>
 			</p>
 			<p>
-				<a href="materia-diferenças-de-formatos-para-cada-local-do-brasil.html" class="link-texto-post-home">			Diferenças de formatos para cada local do Brasil Para empresas nacionais e internacionais.</a>
+				<a href="diferencas-de-formatos-para-cada-local-do-brasil.html" class="link-texto-post-home">			Diferenças de formatos para cada local do Brasil Para empresas nacionais e internacionais.</a>
 			</p>
 		</div>
 	</article>
@@ -67,25 +68,27 @@
 		<div class="estyle-form-section">
 			<div class="estyle-form-span">
 			    <span class="span-form1">
-			    	Cadastre-se para <b >aprender</b> mais e receber conteúdo prático sobre <b>Midia of-line!</b>
+			    	Cadastre-se para <strong>aprender</strong> mais e receber conteúdo prático sobre <strong>Mídia offline!</strong>
 			    </span>
 			</br>
 			</br>
 			    <span class="span-form2"> 
-			    	Fique tranquilo, nós também odiamos SPAM! Só enviaremos conteúdos <b>INTERESSANTES!!</b>
+			    	Fique tranquilo, não praticamos SPAM. Pode confiar! <b>;)</b>
 			    </span>
 			</div>
 			<div class="style-form">
-				<form >
-					<input type="email" name="email" placeholder="Endereço de email" required class="form-input">
-					<input type="text" name="nome" placeholder="Nome completo" required class="form-input">
-					<span class="span-form2">Tem empresa?</span>
-					<select name="tipo" placeholder="empresa" class="form-input input-option">
-				        <option value="B2B" >Sim</option>
-				        <option value="B2C">Não</option>
-	      			</select>
+				<form id="captura">
+					<div class="alerta1" style="display:none">Seus dados foram enviados com sucesso!</div>
+					<!-- <div class="alerta2" style="display:none">Você não preencheu corretamente. Tente de novo.</div> -->
+					<input id="email" type="email" name="email" placeholder="Endereço de email" required class="form-input">
+					<input id="nome" type="text" name="nome" placeholder="Nome completo" required class="form-input">
+					<span class="emp">Empresário?</span>
+					<select id="tipo" name="tipo" class="form-input input-option">
+						<option value="B2C">Não</option>
+						<option value="B2B">Sim</option>
+					  </select>
 					<div class="box-button">
-						<button type="submit" onclick="enviarForm()" class="button">CADASTRAR</button>
+						<button id="botao" type="button" class="button">CADASTRAR</button>
 					</div>
 				</form>
 			</div>
@@ -120,7 +123,12 @@
 		</div>
 	</footer>
 
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/form.js"></script>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -148,8 +156,5 @@
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
 	/></noscript>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-	<script src="script/contato.js"></script>
 </body>
 </html>
