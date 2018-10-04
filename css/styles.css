@@ -204,8 +204,7 @@ ul > a {
 }
 
 .format-text {
-	margin: 2%;
-	text-align: center;
+	text-align: left;
 	color: black;
 }
 
@@ -307,6 +306,9 @@ ul > a {
 	opacity: 
 }
 
+.display-block {
+	display: block;
+}
 
 
 
