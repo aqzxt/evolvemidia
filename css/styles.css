@@ -367,9 +367,24 @@ ul > a {
 
 .span-form2 {
 	font-size:15px; 
-	/* opacity:  */
+	opacity: 
 }
 
 .display-block {
 	display: block;
+}
+
+.button-e-book {
+    background-color: orange;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+	margin-top: -5px;
+	border: 1px solid #ffbe9b;
+}
+
+.estilo-link-e-book {
+	color: black;
+	font-weight: 600;
 }
