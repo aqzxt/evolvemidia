@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale1">
+	<meta name="description" content="descrição de no maximo 90 caracteres">
+	<meta name="keywords" content="palavras-chaves, curtas, maximo 150 caracteres">
+	<meta name="author" content="nome do autor">
+	<title>Evolve Mídia</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+</head>
+<body>
+	<header class="cabecalho container-padrao">
+		<div class="col-6">
+			<img src="img/logo.png" alt="Logo # evolve midia" class="img-logo">
+		</div>
+		<input id="menu-hamburguer-check" class="input-none" type="checkbox">
+		<label for="menu-hamburguer-check">
+			<div class="menu-hamburguer">
+					<span class="hamburguer"></span>
+			</div>
+		</label>
+		<ul class="ul-hamburguer">
+			<li class="li-hamburguer"><a href="index.html">home</a></li>
+			<li class="li-hamburguer"><a href="blog.html">blog</a></li>
+			<li class="li-hamburguer"><a href="sobre.html">sobre</a></li>
+		</ul>
+		<nav class="col-6 menu img-desktop">
+			<ul class="menu">
+				<li class="estilo-lista"><a href="index.html">home</a></li>
+				<li class="estilo-lista"><a href="blog.html">blog</a></li>
+				<li class="estilo-lista"><a href="sobre.html">sobre</a></li>
+			</ul>
+		</nav>
+	</header>
+	<img src="img/img-principal-blog.png" alt="imagem principal de outdoors" class="img img-principal">
+	<article class="postagem container-padrao">
+		<div class="col-7 img-desktop">
+			<img src="img/imagem-principal-sobre.png" alt="imagem princial com diversas propagandas na rua de Shanghai" class="img">
+		</div>
+		<div class="col-5 col-mobile">
+			<h1 class="sobre col-mobile">Blog</h1>
+		</div>
+	</article>
+	<article class="postagem container-padrao">
+		<div class="col-7 col-mobile format-text2">
+			<h1 class="format-text color">Matérias Recentes</h1>
+			<p>
+				<a href="materia-qual-a-melhor-midia-para-investir-on-offline.html" class="link-texto-post-home">Investir em mídia on ou offline? Descubra as vantagens de cada uma.</a>
+			</p>
+			<p>
+				<a href="materia-case-netflix-por-que-a-marca-investe-em-publicidade-offline.html" class="link-texto-post-home">Case Netflix: por que a marca investe em publicidade offline?</a>
+			</p>
+			<p>
+				<a href="materia-quer-anunciar-em-outdoor-saiba-como-aqui.html" class="link-texto-post-home">Quer anunciar em outdoor? Saiba como aqui!</a>
+			</p>
+			<p>
+				<a href="materia-diferenças-de-formatos-para-cada-local-do-brasil.html" class="link-texto-post-home">Diferenças de formatos para cada local do Brasil Para empresas nacionais e internacionais.</a>
+			</p>
+			<p>
+				<a href="materia-relevância-da-midia-out-of-home-e-mercado.html" class="link-texto-post-home">Relevância da Mídia Out of home e Mercado.</a>
+			</p>
+		</div>
+	</article>
+
+	<section class="container-section-form">
+		<div class="estyle-form-section">
+			<div class="estyle-form-span">
+			    <span class="span-form1">
+			    	Cadastre-se para <b >aprender</b> mais e receber conteúdo prático sobre <b>Midia of-line!</b>
+			    </span>
+			</br>
+			</br>
+			    <span class="span-form2"> 
+			    	Fique tranquilo, nós também odiamos SPAM! Só enviaremos conteúdos <b>INTERESSANTES!!</b>
+			    </span>
+			</div>
+			<div class="style-form">
+				<form >
+					<input type="email" name="email" placeholder="Endereço de email" required class="form-input">
+					<input type="text" name="nome" placeholder="Nome completo" required class="form-input">
+					<span class="span-form2">Tem empresa?</span>
+					<select name="tipo" placeholder="empresa" class="form-input input-option">
+				        <option value="B2B" >Sim</option>
+				        <option value="B2C">Não</option>
+	      			</select>
+					<div class="box-button">
+						<button type="submit" onclick="enviarForm()" class="button">CADASTRAR</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container-padrao display-flex flex-wrap box-footer">
+			<div class="col-3 container-mapa-site col-mobile">
+				<h3>Mapa do site</h3>
+				<ul class="list-footer">
+					<a href="index.html"><li>home</li></a>
+					<a href="blog.html"><li>blog</li></a>
+					<a href="sobre.html"><li>sobre</li></a>
+				</ul>
+			</div>
+			<div class="col-6 text-footer col-mobile">
+				<div class="footer-center">
+					
+				</div>
+			</div>
+			<div class="col-3 col-mobile">
+				<div class="rede-social-evolve-footer display-flex">
+					<img src="img/logo_orange.png" alt="logo # evolve midia" class="img img-footer">
+				</div>
+				<div class="rede-social-evolve-footer display-flex">
+					<a href="https://www.instagram.com/evolvemidia/" target="blank"><img src="img/img-instagram.png" alt="link do instagram" class="img-rede-social"></a>
+					<a href="https://www.facebook.com/midiaevolve" target="blank"><img src="img/img-facebook.png" alt="link do facebook" class="img-rede-social"></a>
+					<a href="https://www.linkedin.com/in/evolve-midia/" target="blank"><img src="img/img-linkedin.png" alt="link do linkedin" class="img-rede-social"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126740663-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-126740663-1');
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '643270842725818');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=643270842725818&ev=PageView&noscript=1"
+	/></noscript>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+	<script src="script/contato.js"></script>
+</body>
+</html>
