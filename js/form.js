@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		var tipo = "B2C";
 
 		var dominios = {
-			"@yahoo.com":1, "@yahoo.com.br":1, "@ymail.com":1, "@rocketmail.com":1, "@gmail.com":1, "@bol.com.br":1, "@hotmail.com":1, "@outlook.com":1, "@msn.com":1, "@hotmail.com.br":1, "@live.com":1, "@ig.com.br":1, "@globomail.com":1, "@oi.com.br":1, "@pop.com.br":1, "@inteligweb.com.br":1, "@r7.com":1, "@folha.com.br":1, "@zipmail.com.br":1, "@zoho.com":1,
+			"@yahoo.com":1, "@yahoo.com.br":1, "@ymail.com":1, "@rocketmail.com":1, "@gmail.com":1, "@bol.com.br":1, "@hotmail.com":1, "@outlook.com":1, "@msn.com":1, "@hotmail.com.br":1, "@live.com":1, "@ig.com.br":1, "@globomail.com":1, "@oi.com.br":1, "@pop.com.br":1, "@inteligweb.com.br":1, "@r7.com":1, "@folha.com.br":1, "@zipmail.com.br":1, "@zoho.com":1, "@uol.com":1, "@terra.com.br":1, "@uol.com.br":1,"@icloud.com":1,
 		}
 
 		var index = email.search('@');
