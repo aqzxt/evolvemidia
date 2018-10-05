@@ -27,17 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		var nome = document.getElementById('nome').value;
 		var tipo = "B2C";
 
-		var dominios = [
-			"@yahoo.com", "@yahoo.com.br", "@ymail.com", "@rocketmail.com", "@gmail.com", "@bol.com.br", "@hotmail.com", "@outlook.com", "@msn.com", "@hotmail.com.br", "@live.com", "@ig.com.br", "@globomail.com", "@oi.com.br", "@pop.com.br", "@inteligweb.com.br", "@r7.com", "@folha.com.br", "@zipmail.com.br", "@zoho.com"
-		]
-		// for (i = 0; i < dominios.length; i++) {
-		// 	if (dominios[i] in email) {
-		// 		tipo = 
-		// 	}
-		// }
+		var dominios = {
+			"@yahoo.com":1, "@yahoo.com.br":1, "@ymail.com":1, "@rocketmail.com":1, "@gmail.com":1, "@bol.com.br":1, "@hotmail.com":1, "@outlook.com":1, "@msn.com":1, "@hotmail.com.br":1, "@live.com":1, "@ig.com.br":1, "@globomail.com":1, "@oi.com.br":1, "@pop.com.br":1, "@inteligweb.com.br":1, "@r7.com":1, "@folha.com.br":1, "@zipmail.com.br":1, "@zoho.com":1,
+		}
 
-		
-		
+		var index = email.search('@');
+		var sli = email.slice(index);
+		if (dominios[sli] === undefined) {
+			tipo = 'B2B';
+		}
 		var d = new Date();
 		var dia = ("0" + (d.getDate() +1)).slice(-2);
 		var mes = ("0" + (d.getMonth() +1)).slice(-2);
@@ -68,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.querySelector(".alerta").style.display = "block";
 				document.querySelector(".form-input").value = "";
 				document.querySelector(".f2").value = "";
+
+				localStorage.clear();
 				return false;
 			}
 
