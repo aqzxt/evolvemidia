@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		$.getJSON('https://jsonip.com/?callback=?', function(data) {
 			ip = data.ip;
 
+			console.log(nome, email)
 			if (nome.length > 2 && email.length > 4) {
 				// Enviar para o banco de dados
 				var envio = ref.set({
@@ -67,6 +68,9 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.querySelector(".form-input").value = "";
 				document.querySelector(".f2").value = "";
 
+				if (window.location.href.search('e-book.html') >= 0) {
+					window.location = "https://www.evolvemidia.com.br/obrigado.html"
+				}
 				localStorage.clear();
 				return false;
 			}
