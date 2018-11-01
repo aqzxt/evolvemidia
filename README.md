@@ -4,7 +4,7 @@ Static blog website
 
 ## Technologies used
 
-Javascript and jQuery
-Firebase for hosting
-Cloud Firestore for database
-Amazon Route 53 for managing DNS
+Javascript and jQuery  
+Firebase for hosting  
+Cloud Firestore for database  
+Amazon Route 53 for managing DNS  
