@@ -1,8 +1,9 @@
-# GamaExperience#14
+# GamaExperience#14  
 
-[EVOLVE Mídia blog [LIVE]](https://evolvemidia-4ad05.firebaseapp.com/)
+[EVOLVE Mídia blog [LIVE]](https://evolvemidia-4ad05.firebaseapp.com/)  
+(A [Gama.Academy](https://gama.academy) team project)
 
-## Technologies used
+## Technologies used  
 
 * Javascript (jQuery)  
 * Firebase for hosting  
