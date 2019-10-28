@@ -4,12 +4,7 @@
 
 ## Technologies used
 
-* Javascript and jQuery  
+* Javascript (jQuery)  
 * Firebase for hosting  
-* Cloud Firestore for database  
+* Cloud Firestore (NoSQL) for database  
 * Amazon Route 53 for managing DNS  
-
-## Responsabilities
-  
-* Blog script  
-* General fixes  
